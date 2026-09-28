@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="360" viewBox="0 0 430 360">
+  <defs><pattern id="h" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#9eabb9" stroke-width="2"/></pattern></defs>
+  <line x1="50" y1="310" x2="382" y2="310" stroke="#243247" stroke-width="2"/>
+  <path d="M382 310 l-10 -6 m10 6 l-10 6" fill="none" stroke="#243247" stroke-width="2"/>
+  <line x1="50" y1="310" x2="50" y2="25" stroke="#243247" stroke-width="2"/>
+  <path d="M50 25 l-6 10 m6 -10 l6 10" fill="none" stroke="#243247" stroke-width="2"/>
+  <polygon points="50,185 175,185 175,310" fill="url(#h)" stroke="#243247" stroke-width="1.8"/>
+  <line x1="50" y1="185" x2="175" y2="185" stroke="#243247" stroke-dasharray="5 4"/>
+  <line x1="175" y1="185" x2="175" y2="310" stroke="#243247" stroke-dasharray="5 4"/>
+  <line x1="50" y1="60" x2="300" y2="310" stroke="#243247" stroke-width="2"/>
+  <text x="390" y="315" font-family="serif" font-size="20">x</text>
+  <text x="35" y="20" font-family="serif" font-size="20">y</text>
+  <text x="253" y="275" font-family="serif" font-size="19">x + y = d</text>
+  <text x="96" y="340" font-family="serif" font-size="19">x + y = d/2</text>
+  <text x="180" y="201" font-family="serif" font-size="17">x = d/2</text>
+  <text x="55" y="176" font-family="serif" font-size="17">y = d/2</text>
+</svg>

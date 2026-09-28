@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="320" viewBox="0 0 360 320">
+  <defs><pattern id="h" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#9eabb9" stroke-width="2"/></pattern></defs>
+  <rect x="70" y="30" width="240" height="240" fill="url(#h)" stroke="#243247" stroke-width="2"/>
+  <circle cx="190" cy="150" r="120" fill="white" stroke="#243247" stroke-width="2"/>
+  <line x1="190" y1="150" x2="190" y2="30" stroke="#243247" stroke-dasharray="6 5"/>
+  <text x="200" y="92" font-family="serif" font-size="22">1</text>
+</svg>

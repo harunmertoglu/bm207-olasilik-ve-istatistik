@@ -17,7 +17,7 @@ typst compile --root . src/main.typ BM207-Olasilik-Istatistik.pdf
 Her hafta `haftalar/` altında bağımsız bir dosyada hazırlanır. Yeni haftanın dosyası önceki haftaların içeriğini içermez. Ana dosya, tamamlanan haftaların içerikleri birleştirilerek güncellenir.
 
 - **Birinci hafta:** [Typst kaynağı](./haftalar/01-birinci-hafta/src/birinci-hafta.typ) · [PDF](./haftalar/01-birinci-hafta/birinci-hafta.pdf)
-- **İkinci hafta:** [Typst kaynağı](./haftalar/02-ikinci-hafta/src/ikinci-hafta.typ) · [PDF](./haftalar/02-ikinci-hafta/ikinci-hafta.pdf)
+- **İkinci hafta:** [Typst kaynağı](./haftalar/02-ikinci-hafta/src/ikinci-hafta.typ) · [PDF](./haftalar/02-ikinci-hafta/ikinci-hafta.pdf) · [Notlar](./haftalar/02-ikinci-hafta/README.md)
 
 Haftalık PDF'leri proje kökünde şu komutlarla yeniden oluşturabilirsiniz:
 
@@ -26,7 +26,7 @@ typst compile --root . haftalar/01-birinci-hafta/src/birinci-hafta.typ haftalar/
 typst compile --root . haftalar/02-ikinci-hafta/src/ikinci-hafta.typ haftalar/02-ikinci-hafta/ikinci-hafta.pdf
 ```
 
-Ana kaynak ve PDF şu anda birinci ve ikinci haftayı birlikte içerir. İkinci haftanın çizimleri `haftalar/02-ikinci-hafta/assets/` klasöründe tutulur; ana kaynak bu görsellere haftalık klasörden başvurur.
+Ana kaynak ve PDF şu anda birinci ve ikinci haftayı birlikte içerir. İkinci haftanın SVG çizimleri `haftalar/02-ikinci-hafta/assets/` klasöründe tutulur; ana kaynak bu görsellere haftalık klasörden başvurur.
 
 ## Klasör yapısı
 
@@ -42,6 +42,7 @@ bm207-olasilik-ve-istatistik/
 │   │   ├── src/birinci-hafta.typ
 │   │   └── birinci-hafta.pdf
 │   └── 02-ikinci-hafta/
+│       ├── README.md
 │       ├── assets/
 │       ├── src/ikinci-hafta.typ
 │       └── ikinci-hafta.pdf

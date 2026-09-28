@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="120" viewBox="0 0 600 120">
+  <line x1="30" y1="48" x2="570" y2="48" stroke="#243247" stroke-width="2"/>
+  <circle cx="30" cy="48" r="3" fill="#243247"/><circle cx="570" cy="48" r="3" fill="#243247"/>
+  <line x1="215" y1="40" x2="215" y2="56" stroke="#243247" stroke-width="2"/>
+  <line x1="390" y1="40" x2="390" y2="56" stroke="#243247" stroke-width="2"/>
+  <text x="112" y="83" font-family="serif" font-size="21">x</text>
+  <text x="296" y="83" font-family="serif" font-size="21">y</text>
+  <text x="443" y="83" font-family="serif" font-size="21">d − x − y</text>
+</svg>

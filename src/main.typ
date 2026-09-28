@@ -692,6 +692,8 @@ $ P(A) = ("A olayının ortaya çıkma sayısı") / ("Tüm mümkün durumlar say
 
 olarak hesaplanır. Olasılık bir bütün içinde bir oran aramaktır.
 
+Klasik tanımda örnek uzay sonlu ve sonuçlar eş olasılıklıdır.
+
 $A$ olayının gerçekleşmeme olasılığı ise
 
 $ P(overline(A)) = ("A olayının ortaya çıkmama sayısı") / ("Tüm mümkün durumlar sayısı") = s(overline(A)) / s(S) $
@@ -865,7 +867,7 @@ $ (binom(4,2) binom(8,0))/binom(12,2) $
 
 b) En az 1 bozuk ürün:
 
-$ (4/12 dot 8/11) + (4/12 dot 8/11) + 1/11 = 32/132 + 32/132 + 1/11 $
+$ (4/12 dot 8/11) + (8/12 dot 4/11) + 1/11 = 32/132 + 32/132 + 1/11 = 19/33 $
 
 2. yol:
 
@@ -880,6 +882,7 @@ $ (binom(4,1) binom(8,1))/binom(12,2) + binom(4,2)/binom(12,2) $
 $ P(A) = (binom(4,3) binom(48,5))/binom(52,8) $
 $ P(B) = (binom(4,3) binom(48,5))/binom(52,8) $
 $ P(A inter B) = (binom(4,3) binom(4,3) binom(44,2))/binom(52,8) $
+$ P(A union B) = P(A) + P(B) - P(A inter B) $
 
 == Geometrik Olasılık
 
@@ -887,7 +890,7 @@ $ P(A inter B) = (binom(4,3) binom(4,3) binom(44,2))/binom(52,8) $
 
 #underline[*Örnek:*] Karenin alanında seçilen bir noktanın taralı bölgede olma olasılığı nedir?
 
-#align(center)[#image("../haftalar/02-ikinci-hafta/assets/kare-cember.png", width: 34%)]
+#align(center)[#image("../haftalar/02-ikinci-hafta/assets/kare-cember.svg", width: 34%)]
 
 $ m(A) = 2 dot 2 - pi dot 1^2 = 4 - pi $
 $ m(S) = 4 $
@@ -897,7 +900,7 @@ $ P(A) = (4-pi)/4 $
 
 $ 0 <= a <= 2, quad 0 <= b <= 2, quad a+b <= 1/2 $
 
-#align(center)[#image("../haftalar/02-ikinci-hafta/assets/ucgen-alan.png", width: 33%)]
+#align(center)[#image("../haftalar/02-ikinci-hafta/assets/ucgen-alan.svg", width: 33%)]
 
 $ P = (1/8)/4 = 1/32 $
 
@@ -905,12 +908,14 @@ $ P = (1/8)/4 = 1/32 $
 
 #underline[*Örnek:*] Uzunluğu $d$ olan bir doğru parçası üzerinde rastgele iki nokta işaretleniyor. Elde edilen bu üç parça ile üçgen oluşma olasılığı nedir?
 
-#align(center)[#image("../haftalar/02-ikinci-hafta/assets/dogru-ucgen.png", width: 67%)]
+#align(center)[#image("../haftalar/02-ikinci-hafta/assets/dogru-ucgen.svg", width: 67%)]
 
-$ x+y <= d-x-y quad => quad x+y <= d/2 $
-$ x+y <= d $
+$ x+y > d-x-y quad => quad x+y > d/2 $
+$ x < d/2, quad y < d/2, quad x+y <= d $
 
-#align(center)[#image("../haftalar/02-ikinci-hafta/assets/ucgen-olasilik.png", width: 46%)]
+*Not:* Hoca ilk eşitsizliği ters yazmış. Üçgen oluşması için $x+y > d/2$ olmalı.
+
+#align(center)[#image("../haftalar/02-ikinci-hafta/assets/ucgen-olasilik.svg", width: 46%)]
 
 $ (d^2/8)/(d^2/2) = 1/4 $
 
