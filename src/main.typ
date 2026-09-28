@@ -1,3 +1,5 @@
+#set page(numbering: "1")
+
 = Olasılık ve İstatistik Dersi — BM207
 
 \
