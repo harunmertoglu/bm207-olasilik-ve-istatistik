@@ -1,45 +1,49 @@
 # BM207 — Olasılık ve İstatistik
 
-Gazi Üniversitesi **BM207 Olasılık ve İstatistik** dersi için hazırlanan düzenli ders notları.
+Gazi Üniversitesi **BM207 Olasılık ve İstatistik** dersi için hazırlanan ders notları.
 
-Notlar dönem boyunca haftalık olarak güncellenmektedir.
+## Ana notlar
 
-## Güncel PDF
+[`src/main.typ`](./src/main.typ) birikimli ana dosyadır. Her hafta önce kendi dosyasında hazırlanır; haftanın içeriği tamamlandığında ana dosyaya eklenir. Güncel ana çıktı: [BM207-Olasilik-Istatistik.pdf](./BM207-Olasilik-Istatistik.pdf).
 
-[BM207 Olasılık ve İstatistik PDF'ini görüntüle / indir](./BM207-Olasilik-Istatistik.pdf)
+Ana PDF'yi yeniden oluşturmak için proje kökünde:
 
-## Kaynak Kod
+```sh
+typst compile --root . src/main.typ BM207-Olasilik-Istatistik.pdf
+```
 
-Notlar [Typst](https://typst.app/) ile hazırlanmıştır.
+## Haftalık dosyalar
 
-Kaynak dosya:
+Her hafta `haftalar/` altında bağımsız bir dosyada hazırlanır. Yeni haftanın dosyası önceki haftaların içeriğini içermez. Ana dosya, tamamlanan haftaların içerikleri birleştirilerek güncellenir.
 
-[`src/main.typ`](./src/main.typ)
+- **Birinci hafta:** [Typst kaynağı](./haftalar/01-birinci-hafta/src/birinci-hafta.typ) · [PDF](./haftalar/01-birinci-hafta/birinci-hafta.pdf)
+- **İkinci hafta:** [Typst kaynağı](./haftalar/02-ikinci-hafta/src/ikinci-hafta.typ) · [PDF](./haftalar/02-ikinci-hafta/ikinci-hafta.pdf)
 
-## İçerik
+Haftalık PDF'leri proje kökünde şu komutlarla yeniden oluşturabilirsiniz:
 
-Şu ana kadar dokümanda:
+```sh
+typst compile --root . haftalar/01-birinci-hafta/src/birinci-hafta.typ haftalar/01-birinci-hafta/birinci-hafta.pdf
+typst compile --root . haftalar/02-ikinci-hafta/src/ikinci-hafta.typ haftalar/02-ikinci-hafta/ikinci-hafta.pdf
+```
 
-- Rassal deney
-- Örnek uzay
-- Olaylar
-- Ayrık olaylar
-- Tümleyen
-- Kesişim ve birleşim
-- Fark kümesi
-- Küme özellikleri
-- Sayma kuralları
-- Permütasyon
-- Kombinasyon
+Ana kaynak ve PDF şu anda birinci ve ikinci haftayı birlikte içerir. İkinci haftanın çizimleri `haftalar/02-ikinci-hafta/assets/` klasöründe tutulur; ana kaynak bu görsellere haftalık klasörden başvurur.
 
-konuları bulunmaktadır.
-
-## Klasör Yapısı
+## Klasör yapısı
 
 ```text
 bm207-olasilik-ve-istatistik/
-├── assets/
+├── assets/                         # Ana notların görselleri
 ├── src/
-│   └── main.typ
-├── BM207-Olasilik-Istatistik.pdf
+│   └── main.typ                    # Dönem boyunca büyüyen ana kaynak
+├── BM207-Olasilik-Istatistik.pdf   # Güncel birikimli PDF
+├── haftalar/
+│   ├── 01-birinci-hafta/
+│   │   ├── assets/
+│   │   ├── src/birinci-hafta.typ
+│   │   └── birinci-hafta.pdf
+│   └── 02-ikinci-hafta/
+│       ├── assets/
+│       ├── src/ikinci-hafta.typ
+│       └── ikinci-hafta.pdf
 └── README.md
+```
