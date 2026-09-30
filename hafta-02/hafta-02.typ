@@ -214,7 +214,7 @@ $ P(A union B) = P(A) + P(B) - P(A inter B) $
 
 #underline[*Örnek:*] Karenin alanında seçilen bir noktanın taralı bölgede olma olasılığı nedir?
 
-#align(center)[#image("../assets/kare-cember.svg", width: 34%)]
+#align(center)[#image("assets/kare-cember.svg", width: 34%)]
 
 $ m(A) = 2 dot 2 - pi dot 1^2 = 4 - pi $
 $ m(S) = 4 $
@@ -224,7 +224,7 @@ $ P(A) = (4-pi)/4 $
 
 $ 0 <= a <= 2, quad 0 <= b <= 2, quad a+b <= 1/2 $
 
-#align(center)[#image("../assets/ucgen-alan.svg", width: 33%)]
+#align(center)[#image("assets/ucgen-alan.svg", width: 33%)]
 
 $ P = (1/8)/4 = 1/32 $
 
@@ -232,14 +232,14 @@ $ P = (1/8)/4 = 1/32 $
 
 #underline[*Örnek:*] Uzunluğu $d$ olan bir doğru parçası üzerinde rastgele iki nokta işaretleniyor. Elde edilen bu üç parça ile üçgen oluşma olasılığı nedir?
 
-#align(center)[#image("../assets/dogru-ucgen.svg", width: 67%)]
+#align(center)[#image("assets/dogru-ucgen.svg", width: 67%)]
 
 $ x+y > d-x-y quad => quad x+y > d/2 $
 $ x < d/2, quad y < d/2, quad x+y <= d $
 
 *Not:* Hoca ilk eşitsizliği ters yazmış. Üçgen oluşması için $x+y > d/2$ olmalı.
 
-#align(center)[#image("../assets/ucgen-olasilik.svg", width: 46%)]
+#align(center)[#image("assets/ucgen-olasilik.svg", width: 46%)]
 
 $ (d^2/8)/(d^2/2) = 1/4 $
 

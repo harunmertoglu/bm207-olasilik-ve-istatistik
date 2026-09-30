@@ -1,0 +1,23 @@
+# Keep course PDFs, Typst sources, and vector/image assets used by Typst.
+*
+!*/
+!*.pdf
+!*.typ
+!*.svg
+!*.png
+!*.jpg
+!*.jpeg
+!.gitignore
+!/README.md
+
+# Local agent instructions and machine/editor files never belong in the repo.
+AGENTS.md
+**/AGENTS.md
+.DS_Store
+**/.DS_Store
+.codex/
+**/.codex/
+.vscode/
+**/.vscode/
+.idea/
+**/.idea/
