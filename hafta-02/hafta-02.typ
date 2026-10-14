@@ -237,8 +237,6 @@ $ P = (1/8)/4 = 1/32 $
 $ x+y > d-x-y quad => quad x+y > d/2 $
 $ x < d/2, quad y < d/2, quad x+y <= d $
 
-*Not:* Hoca ilk eşitsizliği ters yazmış. Üçgen oluşması için $x+y > d/2$ olmalı.
-
 #align(center)[#image("assets/ucgen-olasilik.svg", width: 46%)]
 
 $ (d^2/8)/(d^2/2) = 1/4 $
@@ -252,9 +250,7 @@ $ P(A|B) = P(A inter B)/P(B), quad P(B) > 0 $
 Koşullu olasılık örnek uzayın koşula indirgenmesidir.
 
 $ P(overline(A)|B) = P(overline(A) inter B)/P(B) $
-$ P(A inter B) + P(overline(A) inter B) = 1 $
-
-*Not:* Sonucu hoca böyle yazmış fakat bence $1$ yerine $P(B)$ olmalı.
+$ P(A inter B) + P(overline(A) inter B) = P(B) $
 
 #underline[*Örnek:*] Öğrencilerin öğretim üyelerinin verdikleri derslerdeki performanslarına göre aşağıdaki gibi değerlendirilmiştir.
 
