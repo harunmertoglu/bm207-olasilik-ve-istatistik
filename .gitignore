@@ -21,14 +21,13 @@ AGENTS.md
 **/.vscode/
 .idea/
 **/.idea/
+/CLAUDE.md
+/GEMINI.md
 
 # notkit
 !/ders.toml
 !/_sablon/
 !/_sablon/**
-!/AGENTS.md
-!/CLAUDE.md
-!/GEMINI.md
 !/bm207-tum-haftalar.typ
 !/bm207-tum-haftalar.pdf
 hafta-*/kaynak.pdf
