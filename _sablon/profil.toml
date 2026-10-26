@@ -1,0 +1,27 @@
+ad = "harun"
+dil = "tr"
+
+[gorunum]
+font = "Libertinus Serif"
+punto = 10.5
+ana_renk = "203957"               # başlıklar, kapak
+vurgu_renk = "386F9B"             # şekil vurguları, oklar
+soluk_renk = "677184"             # altbilgi
+kenar = { ust = "1.8cm", alt = "1.7cm", yan = "2.1cm" }
+
+[akis]
+ana_konu_yeni_sayfa = true        # her `=` başlığı yeni sayfada başlar
+ornek_bolunmez = true             # #ornek blokları sayfa arasında bölünmez
+
+[etiketler]
+ornek = "Örnek."                  # numaralıysa "Örnek 2."
+soru = "Soru."
+cozum = "Çözüm."
+not = "Not."
+
+[ek]
+sayfa_basina = 0.25               # her 4 sayfaya en fazla 1 #ek
+pdfte_isaretle = false
+
+[sekil]
+devre_stili = "ieee"              # "ieee": zigzag direnç (BM211 notları), "iec": dikdörtgen
